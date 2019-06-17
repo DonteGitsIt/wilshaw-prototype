@@ -1,0 +1,26 @@
+@import '../../../styles.scss';
+
+#profileImage{
+    width:100%;
+    height:25rem;
+    margin:2rem;
+    background: url('../../../images/profilePlaceholder.jpg');
+    background-size: contain;
+    background-position:center;
+    background-size: cover;
+    
+
+}
+.mainFlexBox{
+    flex-flow: wrap;
+    justify-content: center;
+    margin-top:3rem;
+}
+
+
+
+#bio{
+    color: color(primary);
+    width:100%;
+    margin: 0 2rem;
+}
