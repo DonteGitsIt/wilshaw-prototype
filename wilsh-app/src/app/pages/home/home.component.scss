@@ -1,0 +1,66 @@
+@import '../../../styles.scss';
+
+
+#splash{
+    
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    // grid-gap: 0;
+    // grid-template-areas:
+    //     "start . ."
+    //     ". center ."
+    //     ". . right";
+    // grid-template-columns: repeat( 3, auto );
+    // grid-template-rows: auto;
+    height:30rem;
+    width:100%;
+    font-family: 'Raleway', sans-serif;
+    color: color(primary);
+    border-bottom: 0.2rem solid color(primary);
+    
+    position:relative;
+
+    
+    #start{
+        grid-area: start
+    }
+    #center{
+        grid-area: center
+    }
+    #right{
+        grid-area:right;
+    }
+    p{
+        margin:0;
+        cursor: default;
+        letter-spacing: 1rem;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 800;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        
+        transform: rotate(-30deg)
+        
+            
+    }
+    
+
+    &:after{
+        content:'';
+        height: auto;
+        max-width: 100%;
+        top:0;
+        right:0;
+        left:0;
+        bottom:0;
+        position: absolute;
+        z-index: -1;
+        background-image: url('../../../images/splashPlaceholder.jpg');
+        background-size: contain;
+        background-size: cover;
+        opacity:0.4;
+    }
+}

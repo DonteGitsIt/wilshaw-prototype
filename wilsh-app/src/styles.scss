@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+$colors: (
+    primary: #972a00,
+    secondary: lightyellow,
+    accent: #009fdd
+);
+@mixin easeOut{
+    transition: all 0.5s ease-out;
+}
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+
+body, html {
+    height: 100%
+}
+
+body {
+    margin: 0;  
+    background-color: color(secondary);
+    width: 100%;
+    height: 100%;
+    
+   
+    
+}
+h2{
+        margin:0;
+        cursor: default;
+        letter-spacing: 0.2rem;
+        font-size: 20px;
+        color:color(primary);
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+}
+.mainFlexBox{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
