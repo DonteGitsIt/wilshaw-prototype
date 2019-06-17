@@ -109,6 +109,10 @@
             cursor:pointer;
             color: color(secondary);
         }
+
+        &:focus{
+            outline:0;
+        }
     }
 }
 

@@ -17,6 +17,27 @@ export class MenuComponent implements OnInit {
 
   }
 
+  changeCurrent(itemNumber){
+    let navItems = document.querySelectorAll<HTMLElement>('.nav-item')
+    
+
+    navItems.forEach(item => item.classList.remove('current'))
+
+    navItems.forEach(item => console.log(item.id))
+
+    navItems.forEach(
+      function(item){
+        if (item.id == itemNumber){
+          item.classList.add("current")
+        }
+        return;
+      }
+    )
+    
+
+
+  }
+
 
   toggleMenu() {
     let menuBtn = document.querySelector('.menu-btn')

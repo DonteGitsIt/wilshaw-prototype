@@ -7,23 +7,23 @@
 
   <nav class="menu">
       <ul class="menu-nav">
-          <li class="nav-item current">
-              <div class="nav-link">
+          <li class="nav-item current" (click)="changeCurrent(0)" id="0">
+              <div class="nav-link" routerLink="/">
               Home
               </div>
           </li>
-          <li class="nav-item">
-              <div class="nav-link">
+          <li class="nav-item" (click)="changeCurrent(1)" id="1">
+              <div class="nav-link" routerLink="/products" >
               Products
               </div>
           </li>
-          <li class="nav-item">
-              <div class="nav-link">
+          <li class="nav-item" (click)="changeCurrent(2)" id="2">
+              <div class="nav-link" routerLink="/about">
               About
               </div>
           </li>
-          <li class="nav-item">
-              <div class="nav-link">
+          <li class="nav-item" (click)="changeCurrent(3)" id="3">
+              <div class="nav-link" routerLink="/contact">
               Contact
               </div>
           </li>
