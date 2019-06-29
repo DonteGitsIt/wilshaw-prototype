@@ -37,6 +37,15 @@ h2{
         font-family: 'Raleway', sans-serif;
         text-transform: uppercase;
 }
+.text-primary{
+    color:color(primary);
+}
+.text-accent{
+    color:color(accent);
+}
+.text-secondary{
+    color:color(secondary);
+}
 .mainFlexBox{
     height: 100vh;
     display: flex;
@@ -44,4 +53,19 @@ h2{
     align-items: center;
     
 }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color:color(accent);
+    background: color(primary);
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
 

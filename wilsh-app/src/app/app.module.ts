@@ -8,6 +8,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { SlideshowComponent } from './components/slideshow/slideshow.component';
+import { ProductsnavComponent } from './components/productsnav/productsnav.component';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     AboutComponent,
     ProductsComponent,
     ContactComponent,
+    SlideshowComponent,
+    ProductsnavComponent,
   ],
   imports: [
     BrowserModule,
