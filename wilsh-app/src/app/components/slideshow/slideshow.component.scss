@@ -7,6 +7,10 @@
     overflow: hidden;
     border-bottom: 0.2rem solid color(primary);
   }
+.slideshowHeader{
+  display:flex;
+  justify-self: center;
+}
   
   .slideshow {
     position: absolute;
